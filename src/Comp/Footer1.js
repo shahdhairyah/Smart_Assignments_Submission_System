@@ -1,32 +1,84 @@
 import React from 'react';
+import './Styles.css'; // Link your external CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Bootstrap Icons
 
 function Footer1() {
   return (
-    <>
-    <footer className="pt-4 pb-3 mt-5" style={{ backgroundColor: '#1c1f26', color: '#ffffff' }}>
-      <div className="container text-center">
-        <hr className="border-secondary mb-3" />
-        <p className="mb-1 fs-5">
-          &copy; {new Date().getFullYear()}{' '}
-          <strong>
-            <a
-              href="https://github.com/shahdhairyah/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-warning text-decoration-none"
-            >
-              Dhairya
-            </a>
-          </strong>{' '}
-          | All Rights Reserved
+    <footer className="modern-footer mt-5">
+      <div className="container text-center py-4">
+        <h5 className="footer-heading mb-2">Smart Assignment System</h5>
+        <p className="footer-subtitle mb-3">
+          Made with ❤️ by
+          <a
+            href="https://github.com/shahdhairyah/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            {" "}Shah Dhairya 
+          </a>
         </p>
-        <p className="mb-0" style={{ color: '#6c757d', fontSize: '0.95rem' }}>
-          Made with ❤️ for learning and innovation.
+
+        <div className="footer-icons mb-3">
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/shahdhairyah"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-instagram"></i>
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/shahdhairyah"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+
+          <a
+            href="https://github.com/shahdhairya12"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://linkedin.com/in/shahdhairyah"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-linkedin"></i>
+          </a>
+
+          {/* LeetCode */}
+          <a
+            href="https://leetcode.com/sdh12"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png"
+              alt="LeetCode"
+              className="leetcode-icon"
+            />
+          </a>
+        </div>
+
+        <p className="footer-copy mb-0">
+          &copy; {new Date().getFullYear()} All rights reserved.
         </p>
-        <hr className="border-secondary mt-3" />
       </div>
     </footer>
-    </>
   );
 }
 

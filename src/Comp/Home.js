@@ -1,35 +1,33 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './Styles.css'; // ✅ External CSS for animations and styling
 
 function Home() {
   return (
-    <div className="container py-5">
+    <div className="container py-5 enhanced-home">
       {/* Intro Section */}
       <div className="row align-items-center mb-5">
         <div className="col-md-6 mb-4 mb-md-0">
-          <h1 className="mb-4 fw-bold text-primary">Assignment Submission System</h1>
+          <h1 className="mb-4 fw-bold text-primary title-text">Assignment Submission System</h1>
           <p className="lead text-justify">
             The <strong>Assignment Submission System</strong> is a smart, digital solution
             built to transform traditional academic workflows into an efficient and paperless process.
-            This web-based platform streamlines the interaction between students and faculty,
+          </p>
+          <p className="text-justify">
+            This platform streamlines the interaction between students and faculty,
             enabling seamless assignment submission, real-time feedback, and automated deadline tracking.
           </p>
           <p className="text-justify">
-            Designed with modern educational needs in mind, our system ensures transparency, accountability,
-            and time efficiency across the submission-review cycle. Students can upload assignments with ease,
-            while faculty can manage submissions, provide feedback, and evaluate performance — all from a single dashboard.
-          </p>
-          <p className="text-justify">
-            Whether used in colleges, universities, or online learning environments, this system enhances academic productivity,
-            reduces manual workload, and improves the overall learning experience.
+            Whether used in colleges, universities, or online learning environments,
+            this system enhances productivity, reduces workload, and improves the learning experience.
           </p>
         </div>
         <div className="col-md-6 text-center">
           <img
             src="./img/img1.png"
             alt="Assignment Submission System"
-            className="img-fluid rounded-4 shadow"
+            className="img-fluid rounded-4 shadow-lg zoom-on-hover"
             style={{ maxHeight: '400px', objectFit: 'cover' }}
           />
         </div>
@@ -37,7 +35,7 @@ function Home() {
 
       {/* Features Section */}
       <div className="text-center mb-5">
-        <h2 className="fw-semibold mb-4 text-secondary">Key Features</h2>
+        <h2 className="fw-semibold mb-4 text-secondary section-title">Key Features</h2>
         <div className="row">
           {[
             {
@@ -54,7 +52,7 @@ function Home() {
             },
           ].map((feature, idx) => (
             <div className="col-md-4 mb-4" key={idx}>
-              <div className="card h-100 shadow-sm border-0">
+              <div className="card h-100 feature-card">
                 <div className="card-body">
                   <h5 className="card-title text-primary fw-bold">{feature.title}</h5>
                   <p className="card-text text-muted">{feature.desc}</p>
@@ -67,11 +65,11 @@ function Home() {
 
       {/* How It Works Section */}
       <div className="my-5">
-        <h2 className="text-center text-secondary mb-4">How It Works</h2>
+        <h2 className="text-center text-secondary mb-4 section-title">How It Works</h2>
         <div className="row">
-          {["Register Account And Login", "Select Your Subject", "Upload Assignment", "Review By Teacher"].map((step, index) => (
+          {["Register Account & Login", "Select Your Assignment", "Upload Assignment", "Review By Teacher"].map((step, index) => (
             <div key={index} className="col-md-3 text-center mb-4">
-              <div className="p-4 shadow rounded h-100 bg-white">
+              <div className="p-4 rounded bg-white how-it-step">
                 <h4 className="text-primary fw-bold">Step {index + 1}</h4>
                 <p>{step}</p>
               </div>
@@ -82,28 +80,24 @@ function Home() {
 
       {/* FAQ Section */}
       <div className="mb-5">
-        <h2 className="text-center text-secondary mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-center text-secondary mb-4 section-title">Frequently Asked Questions</h2>
         <div className="accordion" id="faqAccordion">
           {[
             {
               question: "Is the platform mobile friendly?",
-              answer:
-                "Yes, the platform is fully responsive. You can easily access it on mobile phones, tablets, and desktops. Whether you're on the go or at your desk, the interface adjusts seamlessly to your screen size.",
+              answer: "Yes, fully responsive for mobile, tablet, and desktop devices.",
             },
             {
               question: "How do teachers give grades?",
-              answer:
-                "Teachers can log in to their dashboard, view submitted assignments, and assign grades. They can also leave comments and suggestions for improvement, all within the platform.",
+              answer: "Teachers can view submissions, assign grades, and provide feedback directly.",
             },
             {
               question: "Can I resubmit an assignment?",
-              answer:
-                "Yes, you can resubmit an assignment anytime before the deadline. Simply upload the updated file and it will replace your previous submission. Make sure to do it before the cut-off time.",
+              answer: "Yes, anytime before the deadline, just upload the updated file.",
             },
             {
-              question: "What file types are supported for uploads?",
-              answer:
-                "The system supports common file formats such as PDF, DOCX, PPT, and ZIP. This allows students to submit essays, reports, presentations, or project files easily.",
+              question: "What file types are supported?",
+              answer: "PDF, DOCX, PPT, and ZIP formats are supported for flexibility.",
             },
           ].map((faq, idx) => (
             <div className="accordion-item" key={idx}>

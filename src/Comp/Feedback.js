@@ -1,5 +1,8 @@
+// Feedback.js
+
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Styles.css"; // ✅ Added external CSS link
 
 function Feedback() {
   const [email, setEmail] = useState("");

@@ -1,1 +1,273 @@
-/* added some css */
+/* === Base === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #e2f1ff);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Navbar === */
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  min-height: 56px;
+}
+
+.navbar-brand,
+.nav-link {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.5;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+/* === Typography === */
+.title-text {
+  font-size: 2.5rem;
+  color: #0d6efd;
+}
+
+.section-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* === Reusable Effects === */
+.zoom-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.03);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* === Feature Cards === */
+.feature-card {
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* === How It Works === */
+.how-it-step {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.how-it-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Accordion === */
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: #fefefe;
+}
+
+/* === Cards (General) === */
+.container {
+  padding-top: 50px;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* === Forms === */
+h2, h3 {
+  font-size: 1.8rem;
+  color: #0d6efd;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check-label {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.02);
+}
+
+/* === Login Animation === */
+.login-container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.02);
+}
+
+.switch-link {
+  font-weight: 600;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+  color: #084298;
+}
+
+/* === Footer === */
+.modern-footer {
+  background-color: #339CFF;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffc107;
+}
+
+.footer-subtitle {
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.footer-link {
+  color: #ffffff;
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.icon-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
+
+/* LeetCode Custom Icon */
+.leetcode-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.leetcode-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.border-top {
+  border-top: 2px solid #dee2e6 !important;
+}
