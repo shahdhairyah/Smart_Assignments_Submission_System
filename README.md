@@ -219,8 +219,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Shah Dhairyah**
 - GitHub: [@shahdhairyah](https://github.com/shahdhairyah)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/shahdhairyah)
-- Email: [your.email@example.com](mailto:con.sdh@outlook.in)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+- Email: [your.email@example.com](mailto:your.email@example.com)
 
 **Project Link**: [https://github.com/shahdhairyah/Smart_Assignments_Submission_System](https://github.com/shahdhairyah/Smart_Assignments_Submission_System)
 
